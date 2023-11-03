@@ -12,6 +12,8 @@ include_directories(${OSG_INCLUDE_DIR})
 
 add_executable(${APP_NAME} ${SOURCE_FILES})
 
+target_include_directories(${APP_NAME} PUBLIC $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/third-party/Catch2/single_include>)
+
 target_link_libraries (${APP_NAME} PUBLIC SkyboltCommon Catch2::Catch2)
 
 catch_discover_tests(${APP_NAME})

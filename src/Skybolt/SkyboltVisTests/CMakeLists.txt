@@ -12,6 +12,8 @@ add_definitions(-DCMAKE_SOURCE_DIR=${CMAKE_SOURCE_DIR} -DASSERTS_CORE_DIR="${CMA
 
 add_executable(${APP_NAME} ${SOURCE_FILES})
 
+target_include_directories(${APP_NAME} PUBLIC $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/third-party/Catch2/single_include>)
+
 target_link_libraries(${APP_NAME} SkyboltVis Catch2::Catch2 ${OPENGL_LIBRARIES})
 
 catch_discover_tests(${APP_NAME})
