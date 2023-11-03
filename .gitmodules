@@ -1,0 +1,3 @@
+[submodule "third-party/cxxtimer"]
+	path = third-party/cxxtimer
+	url = https://github.com/andremaravilha/cxxtimer.git
