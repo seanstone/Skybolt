@@ -14,6 +14,7 @@
 #include <SkyboltCommon/TypedItemContainer.h>
 
 #include <optional>
+#include <string>
 
 namespace skybolt {
 namespace sim {
