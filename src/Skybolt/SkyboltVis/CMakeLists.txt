@@ -71,6 +71,7 @@ endif()
 add_library(${LIB_NAME} STATIC ${SOURCE_FILES} ${HEADER_FILES})
 
 target_include_directories(${LIB_NAME} PUBLIC $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/third-party>)
+target_include_directories(${LIB_NAME} PUBLIC $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/third-party/earcut.hpp/include>)
 
 target_include_directories(${LIB_NAME} PUBLIC ${OSG_INCLUDE_DIR})
 target_link_libraries(${LIB_NAME} ${LIBRARIES})
