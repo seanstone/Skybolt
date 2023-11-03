@@ -4,3 +4,6 @@
 [submodule "third-party/px"]
 	path = third-party/px
 	url = https://github.com/pplux/px.git
+[submodule "third-party/earcut.hpp"]
+	path = third-party/earcut.hpp
+	url = https://github.com/mapbox/earcut.hpp.git
