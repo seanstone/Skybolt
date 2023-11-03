@@ -28,10 +28,10 @@ include_directories(${OSG_INCLUDE_DIR})
 
 find_package(OpenThreads)
 
-find_package(cxxtimer REQUIRED)
-find_package(earcut REQUIRED)
-find_package(httplib REQUIRED)
-find_package(px_sched REQUIRED)
+# find_package(cxxtimer)
+# find_package(earcut)
+# find_package(httplib)
+# find_package(px_sched)
 
 OPTION(SKYBOLT_USE_DELL_XPS_RTT_FIX "Workaround for render-to-texture driver bug on Dell XPS")
 if (SKYBOLT_USE_DELL_XPS_RTT_FIX)
@@ -46,10 +46,10 @@ set(LIBRARIES
 	${OSG_LIBRARIES}
 	${OPENTHREADS_LIBRARIES}
 	${muFFT_LIBRARIES}
-	cxxtimer::cxxtimer
-	earcut::earcut
-	httplib::httplib
-	px_sched::px_sched
+	# cxxtimer::cxxtimer
+	# earcut::earcut
+	# httplib::httplib
+	# px_sched::px_sched
 )
 
 if (OSG_STATIC_LIBS)
