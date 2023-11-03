@@ -7,3 +7,6 @@
 [submodule "third-party/earcut.hpp"]
 	path = third-party/earcut.hpp
 	url = https://github.com/mapbox/earcut.hpp.git
+[submodule "third-party/httplib"]
+	path = third-party/httplib
+	url = https://github.com/yhirose/cpp-httplib.git
