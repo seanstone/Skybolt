@@ -1,3 +1,6 @@
 [submodule "third-party/cxxtimer"]
 	path = third-party/cxxtimer
 	url = https://github.com/andremaravilha/cxxtimer.git
+[submodule "third-party/px"]
+	path = third-party/px
+	url = https://github.com/pplux/px.git
