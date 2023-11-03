@@ -9,8 +9,10 @@
 
 #if defined(WIN32)
 #include <osgViewer/api/Win32/GraphicsHandleWin32>
-#else
+#elif defined(__linux__)
 #include <osgViewer/api/X11/GraphicsWindowX11>
+#elif defined(__APPLE__)
+#include <osgViewer/api/cocoa/GraphicsWindowCocoa>
 #endif
 
 #include <assert.h>
@@ -74,8 +76,10 @@ std::string StandaloneWindow::getHandle() const
 	osg::GraphicsContext* context = mView->getCamera()->getGraphicsContext();
 #if defined(WIN32)
 	size_t ptr = (size_t)dynamic_cast<osgViewer::GraphicsHandleWin32*>(context)->getHWND();
-#else
+#elif defined(__linux__)
 	size_t ptr = (size_t)dynamic_cast<osgViewer::GraphicsWindowX11*>(context)->getWindow();
+#elif defined(__APPLE__)
+	size_t ptr = (size_t)dynamic_cast<osgViewer::GraphicsWindowCocoa*>(context)->getWindow();
 #endif
 	return std::to_string(ptr);
 }
