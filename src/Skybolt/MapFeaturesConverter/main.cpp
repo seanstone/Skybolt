@@ -13,7 +13,7 @@
 #endif
 
 #define PX_SCHED_IMPLEMENTATION 1
-#include <px_sched/px_sched.h>
+#include <px/px_sched.h>
 
 #include <SkyboltVis/ElevationProvider/TilePlanetAltitudeProvider.h>
 #include <SkyboltVis/Renderable/Planet/Tile/TileSource/CachedTileSource.h>

@@ -75,7 +75,7 @@
 #include <SkyboltCommon/StringVector.h>
 #include <SkyboltCommon/Range.h>
 
-#include <px_sched/px_sched.h>
+#include <px/px_sched.h>
 
 #include <filesystem>
 #include <boost/log/trivial.hpp>
