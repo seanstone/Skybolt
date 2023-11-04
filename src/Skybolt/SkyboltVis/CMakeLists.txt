@@ -23,8 +23,8 @@ if (OSG_STATIC_LIBS)
 	)
 endif()
 
-find_package(OSG REQUIRED COMPONENTS osg osgDB osgGA osgText osgUtil osgViewer ${OSG_STATIC_LINK_PLUGIN_NAMES})
-include_directories(${OSG_INCLUDE_DIR})
+# find_package(OSG REQUIRED COMPONENTS osg osgDB osgGA osgText osgUtil osgViewer ${OSG_STATIC_LINK_PLUGIN_NAMES})
+# include_directories(${OSG_INCLUDE_DIR})
 
 find_package(OpenThreads)
 
@@ -50,6 +50,7 @@ set(LIBRARIES
 	# earcut::earcut
 	# httplib::httplib
 	# px_sched::px_sched
+	osg osgDB osgGA osgText osgUtil osgViewer
 )
 
 if (OSG_STATIC_LIBS)
