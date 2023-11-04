@@ -77,8 +77,6 @@ if (OSG_STATIC_LIBS)
 	add_definitions(-DOSG_LIBRARY_STATIC)
 endif()
 
-add_subdirectory (third-party/OpenSceneGraph)
-
 #-------------------------------------------------------------
 # Build tree
 #-------------------------------------------------------------

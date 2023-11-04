@@ -16,7 +16,3 @@
 [submodule "SkyboltAssets"]
 	path = SkyboltAssets
 	url = https://github.com/Prograda/SkyboltAssets.git
-[submodule "third-party/OpenSceneGraph"]
-	path = third-party/OpenSceneGraph
-	url = https://github.com/seanstone/OpenSceneGraph.git
-	ignore = dirty
